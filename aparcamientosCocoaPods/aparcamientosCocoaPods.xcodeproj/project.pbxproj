@@ -11,15 +11,19 @@
 		2D91D43625BDF05C00C76CB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91D43525BDF05C00C76CB0 /* ContentView.swift */; };
 		2D91D43825BDF06100C76CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D91D43725BDF06100C76CB0 /* Assets.xcassets */; };
 		2D91D43B25BDF06100C76CB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D91D43A25BDF06100C76CB0 /* Preview Assets.xcassets */; };
+		6BBD7777291475CB27EA90C6 /* Pods_aparcamientosCocoaPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A484F1DB2F1413982E78840 /* Pods_aparcamientosCocoaPods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A484F1DB2F1413982E78840 /* Pods_aparcamientosCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aparcamientosCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D91D43025BDF05C00C76CB0 /* aparcamientosCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aparcamientosCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D91D43325BDF05C00C76CB0 /* aparcamientosCocoaPodsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aparcamientosCocoaPodsApp.swift; sourceTree = "<group>"; };
 		2D91D43525BDF05C00C76CB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D91D43725BDF06100C76CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D91D43A25BDF06100C76CB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D91D43C25BDF06100C76CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961B7646697F83B5926DBF26 /* Pods-aparcamientosCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aparcamientosCocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-aparcamientosCocoaPods/Pods-aparcamientosCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		AAFB8A1E34E15E2E1DDD9E03 /* Pods-aparcamientosCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aparcamientosCocoaPods.release.xcconfig"; path = "Target Support Files/Pods-aparcamientosCocoaPods/Pods-aparcamientosCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBD7777291475CB27EA90C6 /* Pods_aparcamientosCocoaPods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				2D91D43225BDF05C00C76CB0 /* aparcamientosCocoaPods */,
 				2D91D43125BDF05C00C76CB0 /* Products */,
+				DE46C69EC8049AAB0B7A5E93 /* Pods */,
+				5C195A3CC8D972E3E05E9E21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5C195A3CC8D972E3E05E9E21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A484F1DB2F1413982E78840 /* Pods_aparcamientosCocoaPods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE46C69EC8049AAB0B7A5E93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				961B7646697F83B5926DBF26 /* Pods-aparcamientosCocoaPods.debug.xcconfig */,
+				AAFB8A1E34E15E2E1DDD9E03 /* Pods-aparcamientosCocoaPods.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D91D43F25BDF06100C76CB0 /* Build configuration list for PBXNativeTarget "aparcamientosCocoaPods" */;
 			buildPhases = (
+				3A13FAB4BFC3F559DA258645 /* [CP] Check Pods Manifest.lock */,
 				2D91D42C25BDF05B00C76CB0 /* Sources */,
 				2D91D42D25BDF05B00C76CB0 /* Frameworks */,
 				2D91D42E25BDF05B00C76CB0 /* Resources */,
+				87A347368B2F7F6CB292FDEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A13FAB4BFC3F559DA258645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aparcamientosCocoaPods-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A347368B2F7F6CB292FDEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aparcamientosCocoaPods/Pods-aparcamientosCocoaPods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aparcamientosCocoaPods/Pods-aparcamientosCocoaPods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aparcamientosCocoaPods/Pods-aparcamientosCocoaPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D91D42C25BDF05B00C76CB0 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		2D91D44025BDF06100C76CB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961B7646697F83B5926DBF26 /* Pods-aparcamientosCocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +355,7 @@
 		};
 		2D91D44125BDF06100C76CB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFB8A1E34E15E2E1DDD9E03 /* Pods-aparcamientosCocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
